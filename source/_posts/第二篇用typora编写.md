@@ -7,7 +7,7 @@ tags: 测试测试
 #  测试typora编写
 
 
-![图片啊这是](/source/img/OIG (3).jpg)
+![图片啊这是](/img/OIG (3).jpg)
 
 ```java
 package com.alau.cat.common.i18n;

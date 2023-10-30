@@ -2,13 +2,14 @@
 title: friends
 date: 2023-10-29 15:45:08
 ---
+## 友情链接
+  <!---->
+{% sitegroup %}
+    {% site Blogger, url=https://blogger.liuxiaoshui.com, screenshot=https://pic4.zhimg.com/v2-7fcb0d73e1d90788ccf136e22ba7b1bd_r.jpg, avatar=https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg, description=这是Blogger博客地址 %}
+	{% site notion, url=https://notion.liuxiaoshui.com, screenshot=https://pic4.zhimg.com/80/v2-f549722dac8f777693c090a92498de0f_1440w.jpg, avatar=https://pic4.zhimg.com/80/v2-45eb5749949e7f90a5c788f9bc5721ef_1440w.jpg, description=这是notion博客地址 %}
+{% endsitegroup %}
 
-[
-    {
-        "title": "yuang01",
-        "url": "https://hexo-theme-bamboo.netlify.app/",
-        "avatar": "https://hexo-theme-bamboo.netlify.app/img/avatar.jpg",
-        "screenshot": "https://picx.zhimg.com/80/v2-d7666d074ec59ca4cf14f15c5f891643_1440w.webp",
-        "description": "hexo主题bamboo"
-    }
-]
+## 本地json生成site-card
+{% getSiteOnline /myjson/site.json %}
+
+

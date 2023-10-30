@@ -1,36 +1,93 @@
 # 配置里面 线上地址写法：http://xxx，本地地址。可以在`source`文件夹下创建目录，假如创建img和videos目录，则引用的时候使用 /img/xxx 写法, /videos/xxx  ... 
 
 # 菜单
+# menu:
+#   Home:
+#     url: /
+#     icon: fas fa-home
+#   Archives:
+#     url: /archives
+#     icon: fas fa-archive
+#   Tags:
+#     url: /tags
+#     icon: fas fa-tags
+#   Categories:
+#     url: /categories
+#     icon: fas fa-bookmark
+#   Friends:
+#     url: /friends
+#     icon: fas fa-link
+# 	# 更多: # 这是二级菜单的写法
+#   # children:
+#     # - name: 百度
+#     #   url: http://baidu.com
+#     #   icon: fas fa-film
+#     # - name: 图库
+#     #   url: /gallery
+#     #   icon: fas fa-music
+#     # - name: 友情连接
+#     #   url: /huoban
+#     #   icon: fas fa-film
+#     # - name: 关于我
+#     #   url: /me
+#     #   icon: fas fa-film
 menu:
   Home:
     url: /
-    icon: fas fa-home
+    icon: fa fa-home
+  # 📄文档: # 这是二级菜单的写法
+  # #  icon: fa fa-link
+  #  children:
+  #   - name: 基本配置
+  #     url: /post/hexo-theme-bamboo-new
+  #     # icon: fa fa-music
+  #   - name: 页面功能配置
+  #     url: /post/hexo-theme-bamboo/page/
+  #     # icon: fa fa-film
+  #   - name: 主题更改
+  #     url: /post/hexo-theme-bamboo/theme/
+  #     # icon: fa fa-film
+  #   - name: Front-matter介绍
+  #     url: /post/hexo-theme-bamboo/front-matter/
+  #     # icon: fa fa-film
+  #   - name: 内置标签
+  #     url: /post/hexo-theme-bamboo/tags/
+  #   - name: 建议
+  #     url: /post/hexo-theme-bamboo/suggest/
   Archives:
     url: /archives
-    icon: fas fa-archive
+    icon: fa fa-archive
   Tags:
     url: /tags
-    icon: fas fa-tags
+    icon: fa fa-tags
   Categories:
     url: /categories
-    icon: fas fa-bookmark
+    icon: fa fa-bookmark
+  About:
+    url: /about
+    icon: fa fa-user
   Friends:
-    url: /friends
-    icon: fas fa-link
-	# 更多: # 这是二级菜单的写法
-  # children:
-    # - name: 百度
-    #   url: http://baidu.com
-    #   icon: fas fa-film
-    # - name: 图库
-    #   url: /gallery
-    #   icon: fas fa-music
-    # - name: 友情连接
-    #   url: /huoban
-    #   icon: fas fa-film
-    # - name: 关于我
+    url: /huoban
+  # 留言板:
+  #   url: /messageBoard
+  #   icon: fas fa-comment-dots
+  🐱更多: # 这是二级菜单的写法
+  #  icon: fa fa-link
+   children:
+    - name: 📷图库
+      url: /gallery
+      # icon: fa fa-music
+    # - name: 👪友情连接-旧版
+    #   url: /friends
+      # icon: fa fa-film
+    # - name: 🧒🏻关于我
     #   url: /me
-    #   icon: fas fa-film
+      # icon: fa fa-film
+    - name: 🉐百度
+      url: http://baidu.com
+      # icon: fa fa-film
+
+
 
 # github地址, 头部导航右上角的github链接
 Github: 
@@ -465,7 +522,7 @@ gitalk:
 utterance:
   on: true
   # 仓库名字，格式：你的用户 ID/ 仓库名称，如：yuang01/yuang01.github.io
-  repo: 
+  repo: uxiaoshui/uxiaoshui.github.io
   # 主题
   theme:
     light: github-light
@@ -549,7 +606,7 @@ categories:
 
 #分类详情页面，配置同上
 categoryDetail:
-  title: 'category'
+  title: 'categoryde'
   img: 'https://pic3.zhimg.com/80/v2-98dcd81cb0d1fee52a807c13cedb8338_1440w.jpg?source=1940ef5c'
   desc: '愿你如风，被人温柔以待'
   full: false
@@ -610,7 +667,7 @@ color_scheme:
 site_footer:
   # 通过layout控制页脚元素的显示和顺序
   # busuanzi是访客数那个,假如说你想在 social和 copyright中间加一个自定义内容, 可以这样写 layout: [social, aaa ,copyright, busuanzi, custom], 然后在下面写上aaa: 'markdown格式', aaa这个名称随便取
-  layout: [social, copyright, busuanzi, custom]
+  layout: [copyright,social,  busuanzi,custom]
   social:
     # - icon: fas fa-rss
     #   url: /atom.xml

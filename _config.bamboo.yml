@@ -146,7 +146,7 @@ sidebar:
         icon: fas fa-folder-open
         icon_color: # 标题字体颜色
         title: 文章分类
-        url: /blog/categories/
+        url: /categories/
     # ---------------------------------------
     # tagcloud widget
     side_tagcloud:

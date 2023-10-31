@@ -2,6 +2,8 @@
 title: 第二篇用typora编写
 date: 2023-10-30 03:31:43
 tags: 测试测试
+categories: [testcate5,testcate9,testcate10,testcate19]
+
 ---
 
 #  测试typora编写
